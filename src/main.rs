@@ -27,7 +27,7 @@ fn main() {
     let log_entry = format!("[{}] {}\n", timestamp, message);
 
     // Append to file
-    append_to_file(filename, &log_entry).expect("Failed to write to .proj file");
+    append_to_file(filename, &log_entry).expect("Failed to write to plog file");
 }
 
 fn append_to_file(filename: &str, content: &str) -> std::io::Result<()> {
